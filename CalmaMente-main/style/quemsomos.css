@@ -1,0 +1,99 @@
+@import url(variaveis.css);
+
+header {
+    background-color: var(--light-yellow);
+}
+
+nav button{
+    color: var(--yellow-text);
+    background-color: var(--yellow);
+}
+
+nav h1 {
+    color: var(--yellow-text);
+}
+
+.bar {
+    background-color: var(--yellow-text);
+}
+
+.flex_center img {
+    border-color: var(--light-blue-text);
+}
+
+#bastidorestext{
+    color: #005D72;
+    font-size: 24px;
+}
+
+#quemsomostext{
+    color: #1A9FBD;
+    text-align: center;
+    font-size: 24px;
+}
+
+#leiamaistext{
+    color: #000000;
+    font-size: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10%;
+}
+
+.bloco_quemsomos {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.containerQS {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+}
+
+.missao{
+    background-color: var(--light-yellow);
+    color: var(--yellow-text);
+}
+
+.visao{
+    background-color: var(--light-green);
+    color: var(--green-text);
+}
+
+.valores{
+    background-color: var(--dark-blue-light);
+    color: var(--dark-blue-light-text);
+}
+
+.equipe{
+    background-color: var(--light-pink);
+    color: var(--pink-text);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--light-yellow); 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--yellow-text);
+    border-radius: 10px;
+    width: 6px;
+    height: 40px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-yellow); 
+}
+
+.footer {
+    background-color: var(--light-yellow);
+}

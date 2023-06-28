@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - CalmaMente</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/quemsomos.css">
+    <link rel="stylesheet" href="../style/modal.css">
+    <script src="../script/modal.js" defer></script>
+    <script src="../script/infos/quemsomos.js" defer></script>
+</head>
+
+
+<body>
+
+    <header>
+        <nav>  
+            <img src="../img/logo1.png" width="100" alt="logo">
+            <input type="checkbox" id="menu-toggle">
+            <h1>Quem somos</h1>
+            <label for="menu-toggle" class="menu-button">   
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ansiedade.html">Ansiedade</a></li>
+                <li><a href="depressao.html">Depressão</a></li>
+                <li><a href="tdah.html">TDAH</a></li>
+                <li><a href="#">Contate-nos</a></li>
+            </ul> 
+            <a href="login.html"><button>Login</button></a>          
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="flex_center">
+            <div class="bloco_quemsomos bloco_size" id="bloco__quemsomos" onclick="modalInfo()">
+                <figure>
+                    <h6 id="bastidorestext">Por trás dos Bastidores</h6>
+                    <p id="quemsomostext">Aqui você pode saber mais sobre nós.</p>
+                </figure>
+            </div>
+            <div class="bloco_size flex_center flex-column no_shadow" id="bloco__quemsomos">
+                <div class="button-container">
+                    <button class="btn w-300 missao" id="button-missao" onclick="modalArtic(1)">Missão</button> 
+                    <button class="btn w-300 visao" id="button-visao" onclick="modalArtic(2)">Visão</button>
+                    <button class="btn w-300 valores" id="button-valores" onclick="modalArtic(3)">Valores</button>
+                    <button class="btn w-300 equipe" id="button-equipe" onclick="modalArtic(4)">Equipe</button> 
+                </div>          
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <h2 class="textContact">Contate-nos!</h2>
+        <div class="flex-footer">
+            <div class="footer__icons">
+                <img src="../img/instagram.png" width="55" alt="">
+                <h3 class="m-3"><a href="https://www.instagram.com/fatec.votorantim/">Instagram</a></h3>
+            </div>
+            <div class="footer__icons">
+                <img src="../img/facebook.png" width="40" alt="">
+                <h3 class="m-3"><a href="https://www.facebook.com/fatec.vot">Facebook</a></h3>
+            </div>
+            <div class="footer__icons">
+                <img src="../img/twitter.png" width="45" alt="">
+                <h3 class="m-3"><a href="https://twitter.com/BTS_twt">Twitter</a></h3>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="container__modal flex_center" id="ModalIDl"> 
+        <div class="modal">
+            <button class="fechar">X</button>
+            <!--colocar o conteudo do artigo aqui-->
+            <h3 id="title"></h3>
+            <div class="conteudo">
+                <span id="txt"></span>            
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

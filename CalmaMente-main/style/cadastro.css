@@ -1,0 +1,37 @@
+@import url(variaveis.css);
+
+header {
+    color: var(--light-pink-text);
+    background-color: var(--light-pink);
+}
+
+nav button{
+    color: var(--pink-text);
+    background-color: var(--pink);
+}
+
+nav h1 {
+    color: var(--light-pink-text);
+}
+
+.bar {
+    background-color: var(--light-pink-text);
+}
+
+#btn_cadastre {
+    color: #FAFAFA;
+    background: var(--light-pink-text);
+}
+
+.flex_center img {
+    border-color: var(--pink-text);
+}
+
+.btn:hover {
+    box-shadow: inset -10px 0px 10px 50px rgba(233, 192, 245, 0.5);
+}
+
+
+.footer {
+    background-color: var(--light-pink);
+}

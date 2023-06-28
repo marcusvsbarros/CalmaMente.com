@@ -1,0 +1,64 @@
+@import url(variaveis.css);
+@import url(global.css);
+
+header {
+    background-color: var(--light-blue);
+}
+
+nav button{
+    color: var(--blue-text);
+    background-color: var(--blue);
+}
+
+nav h1 {
+    color: var(--light-blue-text);
+}
+
+.bar {
+    background-color: var(--light-blue-text);
+}
+
+.btn {
+    color: var(--light-blue-text);
+    background: var(--light-blue);
+}
+
+.flex_center img {
+    border-color: none;
+}
+
+#lapis {
+    border: none;
+    border-radius: 50px;    
+    cursor: pointer;
+}
+
+.footer {
+    background-color: var(--light-blue);
+}
+
+.modal-content {
+    display: flex;
+    align-items:baseline;
+    justify-content:start;
+
+}
+
+.modal-content h3 {
+    color: var(--grey-text);
+}
+
+.modal-content button {
+    float: left;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.logout {
+    color: white;
+    background-color: var(--dark-red);
+}
+
+.modal-content img#lapis {
+    float: right;
+}

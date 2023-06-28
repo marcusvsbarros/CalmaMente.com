@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmaMente</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/configs-respiracao.css">
+    <link rel="stylesheet" href="../style/respiracao.css">
+    <link rel="stylesheet" href="../style/modal.css">
+    <script src="../script/respiracao.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <nav class="nav__respiracao">  
+            <img src="../img/logo1.png" width="100" alt="logo">
+            <input type="checkbox" id="menu-toggle">
+            <h1>CalmaMente</h1>
+            <label for="menu-toggle" class="menu-button">   
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ansiedade.html">Ansiedade</a></li>
+                <li><a href="depressao.html">Depressão</a></li>
+                <li><a href="tdah.html">TDAH</a></li>
+                <li><a href="quemsomos.html">Quem somos?</a></li>
+            </ul>
+            <a href="login.html"><button>Login</button></a>
+        </nav>
+    </header>
+    <main>
+        <div class="flex_center flex_column">
+            <div class="main__ajuda">
+                <div>
+                    <button class="tab" onclick="openTab(event, 'respiracao'), modalBlock()">
+                        <img src="../img/respiracao.png" class="no_shadow" width="20%" alt="imagem de uma pessoa respirando">
+                        <span>Exercício de Respiração</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="tab" onclick="openTab(event, 'cards')">
+                        <img src="../img/distracao.png" class="no_shadow"  width="20%" alt="uma pessoa com cerebro confuso">
+                        <span>Distraia a sua mente</span>
+                    </button>
+                </div>
+            </div>
+            <div id="respiracao"></div>
+
+            <div class="container__modal flex_center" id="ModalIDl"> 
+                <div class="modal">
+                    <button class="fechar">X</button>
+                    <!--colocar o conteudo do artigo aqui-->
+                        <h4>Mantenha a Calma</h4>
+                        <div class="circulo"></div>
+                        <div class="mensagem">Inspire</div>
+                    
+                </div>
+            </div>
+        
+            <div id="cards" class="content">
+            <!-- Conteúdo da sessão de cards -->
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>5 coisas que você pode ver...</p>
+                    <img src="../img/lupa.png" alt="Imagem 1" width="20%" class="no_shadow">
+                </div>
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>4 coisas que você pode ouvir...</p>
+                    <img src="../img/orelha.png" width="20%" alt="Imagem 2" class="no_shadow">
+                </div>
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>3 coisas que você pode tocar...</p>
+                    <img src="../img/mao.png" alt="Imagem 2" width="20%" class="no_shadow">
+                </div>
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>2 coisas que você pode sentir o cheiro...</p>
+                    <img src="../img/nariz.png" alt="Imagem 2" width="20%" class="no_shadow">
+                </div>
+                <div class="card flex_center flex_column">
+                    <h3>Diga em voz alta:</h3>
+                    <p>1 coisa que você pode sentir o gosto...</p>
+                    <img src="../img/lingua.png" alt="Imagem 2" width="20%" class="no_shadow">
+                </div>
+            <!-- Adicione mais cards conforme necessário -->
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2 class="textContact">Contate-nos!</h2>
+        <div class="flex-footer">
+            <div class="footer__icons">
+                <img src="../img/instagram.png" width="55" alt="">
+                <h3 class="m-3"><a href="https://www.instagram.com/fatec.votorantim/">Instagram</a></h3>
+            </div>
+            <div class="footer__icons">
+                <img src="../img/facebook.png" width="40" alt="">
+                <h3 class="m-3"><a href="https://www.facebook.com/fatec.vot">Facebook</a></h3>
+            </div>
+            <div class="footer__icons">
+                <img src="../img/twitter.png" width="45" alt="">
+                <h3 class="m-3"><a href="https://twitter.com/BTS_twt">Twitter</a></h3>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

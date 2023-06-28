@@ -1,0 +1,85 @@
+.content {
+  display: none;
+}
+
+.tab {
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  padding: 10px 15px;
+  gap: 40px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  box-shadow: var(--drop-shadow);
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  color: var(--yellow);
+  background-color: #FFA857;
+}
+
+.active {
+  color: var(--yellow);
+  background-color: #FFA857;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.circulo {
+  width: 55%;
+  height: 55%;
+  border-radius: 50%;
+  background-color: #FDFC9D;
+  ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 4s ease-in-out;
+}
+
+.mensagem {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: calc(50% + 100px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.expandir {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.retrair {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.main__ajuda{
+  margin-top: 30px;
+  gap: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__respiracao{
+  gap: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
